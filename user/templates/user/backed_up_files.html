@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Add your specific content for the backed up files page here -->
+<div class="content">
+  <div class="container-fluid">
+    <!-- Add your backed up files content here -->
+    <h1>Backed Up Files Page</h1>
+    <p>Here are the backed up files:</p>
+    <ul>
+      {% for file in files %}
+      <li>{{ file.name }}</li>
+      <li>{{ file.date }}</li>
+      <!-- Add other file details here -->
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Add your specific content for the restore files page here -->
+<div class="content">
+  <div class="container-fluid">
+    <!-- Add your restore files content here -->
+    <h1>Restore Files Page</h1>
+    <p>This is the restore files page.</p>
+    <!-- Add the restore files form and button here -->
+    <form method="post" action="{% url 'restore_files' %}">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-primary">Restore Files</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
